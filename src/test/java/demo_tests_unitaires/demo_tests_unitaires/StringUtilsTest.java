@@ -10,25 +10,22 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Assert;
 
 public class StringUtilsTest {
-	
+
 	@Test
-	public void testLevenshteinDistance(){
-		
-	int result = StringUtils.levenshteinDistance("chien", "chine");
-	assertEquals(2, result);
-	
-	int result1 = StringUtils.levenshteinDistance("chat", "chats");
-	assertEquals(1, result1);
-	
-	int result3 = StringUtils.levenshteinDistance("machins", "machines");
-	assertEquals(1, result3);
-	
-	int result4 = StringUtils.levenshteinDistance(null, null);
-	assertEquals(-1, result4);
-	
-	
-		
-		
+	public void testLevenshteinDistance() {
+
+		int result = StringUtils.levenshteinDistance("chien", "chine");
+		assertEquals(2, result);
+
+		int result1 = StringUtils.levenshteinDistance("chat", "chats");
+		assertEquals(1, result1);
+
+		int result3 = StringUtils.levenshteinDistance("machins", "machines");
+		assertEquals(1, result3);
+
+		int result4 = StringUtils.levenshteinDistance(null, null);
+		assertEquals(-1, result4);
+
 	}
 
 }
