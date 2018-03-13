@@ -23,9 +23,18 @@ public class StringUtilsTest {
 		int result3 = StringUtils.levenshteinDistance("machins", "machines");
 		assertEquals(1, result3);
 
-		int result4 = StringUtils.levenshteinDistance(null, null);
-		assertEquals(-1, result4);
+
 
 	}
 
+	
+	@Test(expected = RuntimeException.class)
+	
+	public void testLevenshteinDistanceExeption() {
+
+	
+		int result= StringUtils.levenshteinDistance(null, null);
+	
+
+	}
 }
